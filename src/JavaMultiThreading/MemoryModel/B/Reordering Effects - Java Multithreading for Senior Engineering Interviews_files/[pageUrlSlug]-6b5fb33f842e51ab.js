@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[53539,26376,90650,61226],{92440:function(a,b,c){(window.__NEXT_P=window.__NEXT_P||[]).push(["/courses/[courseUrlSlug]/[pageUrlSlug]",function(){return c(15199)}])},15199:function(a,b,c){"use strict";c.r(b),c.d(b,{"__N_SSP":function(){return e},default:function(){return d.default}});var d=c(13589),e=!0}},function(a){a.O(0,[57920,60380,37734,60283,60770,49774,49685,40259,66196,21998,92888,40179],function(){var b;return a(a.s=92440)}),_N_E=a.O()}])
+//# sourceMappingURL=[pageUrlSlug]-6b5fb33f842e51ab.js.map

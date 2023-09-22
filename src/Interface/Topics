@@ -1,0 +1,16 @@
+- What is Interface.
+- How to define Interface
+- Why we need Interface
+- Diamond Problem and Solution
+- Method in Interface
+- Fields in Interface
+- Interface Implementation and Rules
+- Nested Interface
+        - Interface within Interface
+        - Interface within a Class
+- Abstract Class Vs Interface
+- Java8 and Java9 Interface features
+         - Default Method
+         - Static Method
+         - Functional Interface
+         - Private Method
