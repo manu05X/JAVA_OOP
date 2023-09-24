@@ -12,6 +12,7 @@ public class NumberPrinter implements Runnable{
     }
 }
 
+
 /*
 We should not use global variable i.e static as it may print same number
 many times as each thread works independently so they are unaware of each other
@@ -30,3 +31,17 @@ public class NumberPrinter implements Runnable{
         nextNumberToPrint += 1;
     }
 }*/
+
+/*
+public class NumberPrinter extends Thread{
+    private int numberToPrint;
+
+    public NumberPrinter(int num){
+        this.numberToPrint = num;
+    }
+
+    public void run(){
+        System.out.println(numberToPrint + " --> Printed By: Thread# " + Thread.currentThread().getName());
+    }
+}
+*/

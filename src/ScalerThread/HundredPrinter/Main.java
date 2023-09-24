@@ -14,6 +14,7 @@ public class Main {
             Thread t = new Thread(obj);
             //// 3. Start the thread (it just tells the cpu that I want to run this thread)
             t.start();
+
         }
     }
 }
