@@ -80,3 +80,13 @@ is idle. This is a little harder to do with Thread subclasses.
 
 Sometimes you may have to implement Runnable as well as subclass Thread. For instance, if creating a subclass of Thread that
 can execute more than one Runnable. This is typically the case when implementing a thread pool.
+
+In Java, it is generally preferred to implement the Runnable interface instead of extending the Thread class for several reasons:
+
+1.> Separation of Concerns: Implementing the Runnable interface promotes a cleaner separation of concerns between the task you want to perform and the thread that executes it. When you extend the Thread class, you mix the thread management code with the logic of your task, making your code less modular and harder to maintain.
+
+2.> Reusability: By implementing Runnable, you can reuse the same runnable task with different threads, allowing for better code reuse. If you extend Thread, you are creating a new class for each task, which can lead to code duplication.
+
+3.> Flexibility: Implementing Runnable allows you to use the same runnable task with different threading mechanisms, such as thread pools or executors. This flexibility is not possible when extending the Thread class.
+
+4.> Avoiding single inheritance limitation: In Java, a class can only inherit from one superclass. If you extend the Thread class, you lose the ability to inherit from another class, which may be necessary for your application
