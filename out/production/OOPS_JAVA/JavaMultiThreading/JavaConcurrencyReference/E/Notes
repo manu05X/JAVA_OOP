@@ -1,7 +1,16 @@
 Thread Pools
-Thread pools in Java are implementations of the Executor interface or any of its sub-interfaces. Thread pools allow us to decouple task submission and execution. We have the option of exposing an executor's configuration while deploying an application or switching one executor for another seamlessly.
+Thread pools in Java are implementations of the Executor interface or any of its sub-interfaces.
+Thread pools allow us to decouple task submission and execution.
+We have the option of exposing an executor's configuration while deploying an application or switching
+one executor for another seamlessly.
 
-A thread pool can be tuned for the size of the threads it holds. A thread pool may also replace a thread if it dies of an unexpected exception. Using a thread pool immediately alleviates from the ails of manual creation of threads.
+    A thread pool consists of homogenous worker threads that are assigned to execute tasks.
+    Once a worker thread finishes a task, it is returned to the pool.
+    Usually, thread pools are bound to a queue from which tasks are dequeued for execution by worker threads.
+
+A thread pool can be tuned for the size of the threads it holds.
+A thread pool may also replace a thread if it dies of an unexpected exception.
+Using a thread pool immediately alleviates from the ails of manual creation of threads.
 
     * There's no latency when a request is received and processed by a thread because no time is lost in creating a thread.
 

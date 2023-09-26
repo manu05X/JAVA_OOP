@@ -2,7 +2,9 @@ Basic Thread Handling
 This lesson shows various thread handling methods with examples.
 
 Joining Threads
-A thread is always created by another thread except for the main application thread. Study the following code snippet. The innerThread is created by the thread which executes the main method. You may wonder what happens to the innerThread if the main thread finishes execution before the innerThread is done?
+A thread is always created by another thread except for the main application thread.
+Study the following code snippet. The innerThread is created by the thread which executes the main method.
+You may wonder what happens to the innerThread if the main thread finishes execution before the innerThread is done?
 
 class Demonstration {
     public static void main( String args[] ) throws InterruptedException {
