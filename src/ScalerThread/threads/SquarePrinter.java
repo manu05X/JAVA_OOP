@@ -26,6 +26,7 @@ public class SquarePrinter extends Thread{
 }
 
 /*
+//implements Runnable
 package ScalerThread.threads;
 //public class SquarePrinter implements Runnable{
     private Integer number;
