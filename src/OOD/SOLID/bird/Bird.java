@@ -15,7 +15,9 @@ public abstract class Bird {
         this.type = type;
     }
 
-    public abstract void fly();
+    public abstract void makeSound();
+
+    //public abstract void fly();// move to its attribute class i.e flyable
 }
 /*
 public void fly(){
