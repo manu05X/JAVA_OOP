@@ -12,8 +12,17 @@ public class Runner {
         flyAll(List.of(eagle,parrot,parrot0)); // making list of all flyable bird
 
 
-        NonFlyingBird penguin = new Penguin(20,"Brown","Medium","Sharp", BirdType.Penguin);
-        penguin.makeSound();
+        Swimmable penguin0 = new Penguin(20,"Brown","Medium","Sharp", BirdType.Penguin);
+        penguin0.swim(); // this is correct here as refrence of obj is Swimmable
+        //penguin0.makeSound() // this is wrong as refrence of obj is Swimmable
+        ((Bird) penguin0).makeSound(); // this is correct way
+
+
+        Bird penguin1 = new Penguin(20,"Brown","Medium","Sharp", BirdType.Penguin);
+        penguin1.makeSound();//this is correct as refrence of obj is Bird
+        //penguin.swim(); //this is wrong as refrence of obj is Bird
+        ((Swimmable) penguin1).swim();
+
 
         Bird bird3 = new Penguin(20,"Brown","Medium","Sharp", BirdType.Penguin);
         bird3.makeSound();
