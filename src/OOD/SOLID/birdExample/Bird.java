@@ -4,9 +4,9 @@ public class Bird {
     private String color;
     private String size;
     private String beakType;
-    private String type;
+    private BirdType type;
 
-    public Bird(Integer weight, String colour, String size, String beakType, String type) {
+    public Bird(Integer weight, String colour, String size, String beakType, BirdType type ) {
         this.weight = weight;
         this.color = colour;
         this.size = size;
@@ -15,15 +15,14 @@ public class Bird {
     }
 
     //public abstract void fly();// move to its attribute class i.e flyable
-    public void fly() {
-        if (type == "Eagle") {
+    public void fly(){
+        if (type == BirdType.Eagle){
             System.out.println("Eagle is Flying");
-        } else if (type == "Penguin") {
+        } else if(type == BirdType.Penguin){
             System.out.println("Penguin is swimming");
-        } else if (type == "Parrot") {
+        }else if(type == BirdType.Parrot){
             System.out.println("Parrot is Flying");
-        }
-        else {
+        }else {
             System.out.println(type + " is not present");
         }
     }
