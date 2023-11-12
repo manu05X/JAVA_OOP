@@ -1,5 +1,8 @@
 package OOD.SOLID.birdExample;
 
+import OOD.SOLID.birdExample.Interface.Flyable;
+import OOD.SOLID.birdExample.Interface.Swimmable;
+
 import java.util.List;
 
 public class Runner {

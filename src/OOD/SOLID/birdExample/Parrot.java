@@ -1,5 +1,8 @@
 package OOD.SOLID.birdExample;
 
+import OOD.SOLID.birdExample.Interface.Flyable;
+import OOD.SOLID.birdExample.Interface.FlyingBehaviour;
+
 public class Parrot extends Bird implements Flyable {
     private FlyingBehaviour flyingBehaviour;
     public Parrot(Integer weight, String colour, String size, String beakType, BirdType type, FlyingBehaviour flyingBehaviour) {
