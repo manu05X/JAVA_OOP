@@ -14,5 +14,5 @@ public abstract class Bird {
         this.type = type;
     }
 
-    public abstract void fly();
+    public abstract void makeSound();
 }
