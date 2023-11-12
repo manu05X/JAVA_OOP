@@ -4,12 +4,14 @@ import java.util.List;
 
 public class Runner {
     public static void main(String[] args){
-        Flyable parrot0 = new Parrot(10,"Brown","Medium","Sharp", BirdType.Parrot);
-        Parrot parrot = new Parrot(11,"Brown","Medium","Sharp", BirdType.Parrot);
-        Eagle eagle = new Eagle(20,"Brown","Medium","Sharp", BirdType.Eagle);
+        Flyable parrot0 = new Parrot(10,"Brown","Medium","Sharp", BirdType.Parrot, new FlappingBehaviour());
+        parrot0.fly();
 
+        //Parrot parrot = new Parrot(11,"Brown","Medium","Sharp", BirdType.Parrot);
+        Eagle eagle = new Eagle(20,"Brown","Medium","Sharp", BirdType.Eagle, new GlidingBehaviour());
+        eagle.fly();
 
-        flyAll(List.of(eagle,parrot,parrot0)); // making list of all flyable bird
+       // flyAll(List.of(parrot0)); // making list of all flyable bird
 
 
         Swimmable penguin0 = new Penguin(20,"Brown","Medium","Sharp", BirdType.Penguin);
